@@ -3,19 +3,19 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # Configs
-API_HASH = os.environ['API_HASH']
-APP_ID = int(os.environ['APP_ID'])
-BOT_TOKEN = os.environ['BOT_TOKEN']
-TRACK_CHANNEL = int(os.environ['TRACK_CHANNEL'])
-OWNER_ID = os.environ['OWNER_ID']
+API_HASH = os.environ['b214aec132378022e02df812714ba7a4']
+APP_ID = int(os.environ['4080786'])
+BOT_TOKEN = os.environ['2030108326:AAEy9ghh9E01gSUyhIaoBIXL7SvovXQot1I']
+TRACK_CHANNEL = int(os.environ['-1001506970902'])
+OWNER_ID = os.environ['1686223760']
 
 #Button
 START_BUTTONS=[
     [
-        InlineKeyboardButton('Source', url='https://github.com/X-Gorn/File-Sharing'),
-        InlineKeyboardButton('Project Channel', url='https://t.me/xTeamBots'),
+        InlineKeyboardButton('SOURCE 👾', url='https://github.com/killersparrow0'),
+        InlineKeyboardButton('JOIN ⚡', url='https://t.me/movies_songs_tj'),
     ],
-    [InlineKeyboardButton('Author', url="https://t.me/xgorn")],
+    [InlineKeyboardButton('MEET ME ', url="https://t.me/movies_songs_tj")],
 ]
 
 # Running bot
@@ -65,7 +65,7 @@ async def _startfile(bot, update):
 # Help msg
 @xbot.on_message(filters.command('help') & filters.private)
 async def _help(bot, update):
-    await update.reply_text("Supported file types:\n\n- Video\n- Audio\n- Photo\n- Document\n- Sticker\n- GIF\n- Voice note\n- Video note\n\n If bot didn't respond, contact @xgorn", True)
+    await update.reply_text("Supported file types:\n\n- Video\n- Audio\n- Photo\n- Document\n- Sticker\n- GIF\n- Voice note\n- Video note\n\n If bot didn't respond, contact @movies_songs_tj", True)
 
 
 # Store file

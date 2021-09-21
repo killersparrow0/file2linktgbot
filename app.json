@@ -31,7 +31,7 @@
       "description": "If all: will working for all users (storing files) or fill with your telegram id so that only you can store the files.",
       "value": "all"
     }
-  },
+{
   "addons": [
   ],
   "buildpacks": [{
